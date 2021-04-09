@@ -66,7 +66,7 @@ bool check_win() {
 }
 bool check_available_move_per_row(int row) {
     for(int col = N-1 ; col>0 ; col--){
-        if((grid[row][col] == grid[row][col] && grid[row][col]!=0)||(grid[row][col]< grid[row][col-1] && grid[row][col] == 0)){
+        if((grid[row][col] == grid[row][col-1] && grid[row][col]!=0)||(grid[row][col]< grid[row][col-1] && grid[row][col] == 0)){
             return true;
         }
     }
